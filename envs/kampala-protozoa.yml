@@ -1,0 +1,7 @@
+name: kampala-protozoa
+channels:
+  - conda-forge
+dependencies:
+  - requests
+  - pandas
+  - python=3.12
