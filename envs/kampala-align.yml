@@ -1,0 +1,7 @@
+name: kampala-align
+channels:
+  - conda-forge
+dependencies:
+  - samtools=1.22.1
+  - python=3.12
+  - bowtie2=2.5.4

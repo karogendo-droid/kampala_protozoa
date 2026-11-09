@@ -1,0 +1,9 @@
+name: kampala-qc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - multiqc
+  - fastqc=0.12.1
+  - openjdk=21
+  - fastp=1.4.0
