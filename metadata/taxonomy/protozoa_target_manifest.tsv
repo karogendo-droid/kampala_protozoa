@@ -1,0 +1,13 @@
+target_group	organism	priority	reference_status
+Giardia	Giardia duodenalis	Primary	PENDING_VERIFICATION
+Cryptosporidium	Cryptosporidium hominis	Primary	PENDING_VERIFICATION
+Cryptosporidium	Cryptosporidium parvum	Primary	PENDING_VERIFICATION
+Cryptosporidium	Cryptosporidium meleagridis	Secondary	PENDING_VERIFICATION
+Entamoeba	Entamoeba histolytica	Primary	PENDING_VERIFICATION
+Entamoeba	Entamoeba dispar	Primary	PENDING_VERIFICATION
+Entamoeba	Entamoeba moshkovskii	Primary	PENDING_VERIFICATION
+Cyclospora	Cyclospora cayetanensis	Primary	PENDING_VERIFICATION
+Cystoisospora	Cystoisospora belli	Secondary	PENDING_VERIFICATION
+Blastocystis	Blastocystis sp.	Primary	PENDING_VERIFICATION
+Microsporidia	Enterocytozoon bieneusi	Secondary	PENDING_VERIFICATION
+Microsporidia	Encephalitozoon intestinalis	Secondary	PENDING_VERIFICATION

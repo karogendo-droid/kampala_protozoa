@@ -1,0 +1,7 @@
+run_accession,sample_id,treatment_plant,collection_source,sampling_condition
+SRR28434174,RES001,Bugolobi,Emptier_truck,Dry_morning
+SRR28434173,RES002,Bugolobi,Environmental,Dry_morning
+SRR28434172,RES003,Lubigi,Environmental,Dry_morning
+SRR28434171,RES004,Lubigi,Emptier_truck,Dry_morning
+SRR28434170,RES005,Bugolobi,Environmental,Dry_evening
+SRR28434169,RES013,Lubigi,Environmental,Dry_evening
