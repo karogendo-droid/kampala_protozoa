@@ -1,0 +1,7 @@
+sample_id	run_accession	plant	accepted	ambiguous_competing_reference	conflicting_mates	no_qualifying_target
+RES001	SRR28434174	Bugolobi				516508
+RES002	SRR28434173	Bugolobi				1212420
+RES003	SRR28434172	Lubigi	1			1032866
+RES004	SRR28434171	Lubigi				275421
+RES005	SRR28434170	Bugolobi	1			1028172
+RES013	SRR28434169	Lubigi	1			842242

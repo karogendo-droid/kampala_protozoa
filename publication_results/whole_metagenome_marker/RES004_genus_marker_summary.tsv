@@ -1,0 +1,9 @@
+sample_id	run_accession	plant	genus	accepted_distinct_read_pairs	two_mate_support_pairs	ssu_best_reference_pairs	its_best_reference_pairs	distinct_reference_ids	distinct_reference_start_sites	distinct_100bp_reference_start_bins	interpretation
+RES004	SRR28434171	Lubigi	Giardia	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Cryptosporidium	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Entamoeba	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Cyclospora	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Cystoisospora	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Blastocystis	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Enterocytozoon	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD
+RES004	SRR28434171	Lubigi	Encephalitozoon	0	0	0	0	0	0	0	NOT_CORROBORATED_AT_PRESET_THRESHOLD

@@ -1,0 +1,28 @@
+accession	taxid	organism	sequence_count
+GCA_001543975.1	1394984	Giardia duodenalis assemblage B	508
+GCA_002893445.1	88456	Cyclospora cayetanensis	650
+GCA_002914575.1	41668	Entamoeba moshkovskii	4607
+GCA_006247105.1	5742	Giardia muris	59
+GCA_007210665.1	756076	Cryptosporidium tyzzeri	11
+GCA_011634595.1	5741	Giardia duodenalis	19
+GCA_014529505.1	83540	Cryptosporidium felis	133
+GCA_015245375.1	5807	Cryptosporidium parvum	8
+GCA_024399295.1	58839	Encephalitozoon intestinalis	11
+GCA_025449415.1	944168	Blastocystis sp. subtype 3	824
+GCA_027243975.1	195482	Cryptosporidium canis	282
+GCA_027406405.1	944036	Blastocystis sp. subtype 1	116
+GCA_039657295.1	93969	Cryptosporidium meleagridis	13
+GCA_040285075.1	5807	Cryptosporidium parvum	8
+GCA_045269125.1	237895	Cryptosporidium hominis	8
+GCA_057946535.1	5759	Entamoeba histolytica	37
+GCA_057946545.1	46681	Entamoeba dispar	36
+GCF_000002655.1	330879	Aspergillus fumigatus Af293	8
+GCF_000005845.2	511145	Escherichia coli str. K-12 substr. MG1655	1
+GCF_000006565.2	508771	Toxoplasma gondii ME49	2264
+GCF_000006765.1	208964	Pseudomonas aeruginosa PAO1	1
+GCF_000009045.1	224308	Bacillus subtilis subsp. subtilis str. 168	1
+GCF_000146045.2	559292	Saccharomyces cerevisiae S288C	17
+GCF_000182965.3	237561	Candida albicans SC5314	8
+GCF_000208865.1	29176	Neospora caninum	14
+GCF_000499425.1	5801	Eimeria acervulina	3415
+GCF_000499545.2	5802	Eimeria tenella	4665
