@@ -1,0 +1,29 @@
+accession	organism	taxid	filename	collection
+GCF_000002435.2	Giardia duodenalis	5741	GCF_000002435.2_UU_WB_2.1_genomic.fna.gz	enteric_refseq_v1
+GCF_000151665.1	Blastocystis hominis	12968	GCF_000151665.1_ASM15166v1_genomic.fna.gz	enteric_refseq_v1
+GCF_002999335.1	Cyclospora cayetanensis	88456	GCF_002999335.1_CcayRef3_genomic.fna.gz	enteric_refseq_v1
+GCF_001865355.1	Cryptosporidium andersoni	117008	GCF_001865355.1_ASM186535v1_genomic.fna.gz	enteric_refseq_v1
+GCF_000208925.1	Entamoeba histolytica HM-1:IMSS	294381	GCF_000208925.1_JCVI_ESG2_1.0_genomic.fna.gz	enteric_refseq_v1
+GCF_009768925.1	Cryptosporidium bovis	310047	GCF_009768925.1_ASM976892v2_genomic.fna.gz	enteric_refseq_v1
+GCF_000006425.1	Cryptosporidium hominis TU502	353151	GCF_000006425.1_ASM642v1_genomic.fna.gz	enteric_refseq_v1
+GCF_000165345.1	Cryptosporidium parvum Iowa II	353152	GCF_000165345.1_ASM16534v1_genomic.fna.gz	enteric_refseq_v1
+GCF_000209125.1	Entamoeba dispar SAW760	370354	GCF_000209125.1_JCVI_EDISG_1.0_genomic.fna.gz	enteric_refseq_v1
+GCF_000330505.1	Entamoeba invadens IP1	370355	GCF_000330505.1_EIA2_v2_genomic.fna.gz	enteric_refseq_v1
+GCF_000006515.1	Cryptosporidium muris RN66	441375	GCF_000006515.1_JCVI_cmg_v1.0_genomic.fna.gz	enteric_refseq_v1
+GCF_009792415.1	Cryptosporidium ryanae	515981	GCF_009792415.1_ASM979241v2_genomic.fna.gz	enteric_refseq_v1
+GCF_001865345.1	Cryptosporidium ubiquitum	857276	GCF_001865345.1_ASM186534v1_genomic.fna.gz	enteric_refseq_v1
+GCF_000743755.1	Blastocystis sp. subtype 4	944170	GCF_000743755.1_ASM74375v1_genomic.fna.gz	enteric_refseq_v1
+GCF_000257125.1	Entamoeba nuttalli P19	1076696	GCF_000257125.1_ENU1_v1_genomic.fna.gz	enteric_refseq_v1
+GCF_004936735.1	Cryptosporidium sp. chipmunk genotype I	1280935	GCF_004936735.1_CCh_genotype_I_genomic.fna.gz	enteric_refseq_v1
+GCA_027406365.1	Blastocystis sp. subtype 1	944036	GCA_027406365.1_ASM2740636v1_genomic.fna.gz	enteric_expansion_v1
+GCA_000963365.1	Blastocystis sp. subtype 2	944160	GCA_000963365.1_ASM96336v1_genomic.fna.gz	enteric_expansion_v1
+GCA_029241775.1	Blastocystis sp. subtype 3	944168	GCA_029241775.1_ASM2924177v1_genomic.fna.gz	enteric_expansion_v1
+GCA_000963415.1	Blastocystis sp. subtype 6	944208	GCA_000963415.1_ASM96341v1_genomic.fna.gz	enteric_expansion_v1
+GCA_027406465.1	Blastocystis sp. subtype 7	1076755	GCA_027406465.1_ASM2740646v1_genomic.fna.gz	enteric_expansion_v1
+GCA_000963455.1	Blastocystis sp. subtype 8	429571	GCA_000963455.1_ASM96345v1_genomic.fna.gz	enteric_expansion_v1
+GCA_000963465.1	Blastocystis sp. subtype 9	1544353	GCA_000963465.1_ASM96346v1_genomic.fna.gz	enteric_expansion_v1
+GCA_000209485.1	Enterocytozoon bieneusi H348	481877	GCA_000209485.1_ASM20948v1_genomic.fna.gz	enteric_expansion_v1
+GCF_000091225.2	Encephalitozoon cuniculi GB-M1	284813	GCF_000091225.2_ASM9122v2_genomic.fna.gz	enteric_expansion_v1
+GCF_000146465.1	Encephalitozoon intestinalis ATCC 50506	876142	GCF_000146465.1_ASM14646v1_genomic.fna.gz	enteric_expansion_v1
+GCF_000277815.2	Encephalitozoon hellem ATCC 50504	907965	GCF_000277815.2_ASM27781v3_genomic.fna.gz	enteric_expansion_v1
+GCF_000280035.1	Encephalitozoon romaleae SJ-2008	1178016	GCF_000280035.1_ASM28003v2_genomic.fna.gz	enteric_expansion_v1

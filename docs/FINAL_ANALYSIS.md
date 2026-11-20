@@ -164,3 +164,41 @@ references/kraken2/kampala_screen_v3
 
 Reference sequence files and the compiled Kraken2 database
 are excluded from GitHub because of their size.
+
+## Publication-table reconstruction and verification
+
+The final manuscript summary tables can be verified using:
+
+python3 scripts/27_export_publication_tables.py
+
+The script performs two complementary checks:
+
+1. Reconstructs preliminary genus-clade read-pair counts
+   directly from the six original Kraken2 classification files.
+
+2. Reconstructs qualifying genomic-alignment counts from
+   genomic_distribution_summary.csv, produced by
+   scripts/21_genomic_distribution.py.
+
+The script compares both reconstructed tables with the
+published copies in publication_results/.
+
+Verified totals:
+- Preliminary candidate assignments: 89,444 read pairs.
+- Qualifying genomic alignments: 10,149 read pairs.
+
+All six sequencing runs matched the published summary tables.
+
+Reconstructed outputs are written to:
+
+results/publication_table_rebuild/
+
+This directory is excluded from GitHub.
+
+The verification does not rerun Kraken2, Bowtie2 or the
+marker analyses. It establishes numerical consistency
+between the existing analytical outputs and the
+publication-supporting tables.
+
+The initial assignments remain preliminary genetic signals,
+not confirmed organism-level detections.

@@ -104,6 +104,15 @@ Kanyerezi S, et al. Metagenomics insights into the microbial resistome and virul
 
 https://doi.org/10.12688/openresafrica.15040.1
 
+## Supporting documentation
+
+- [Final analysis and reproducibility](docs/FINAL_ANALYSIS.md)
+- [Final reference inventory](metadata/taxonomy/final_screen_reference_inventory.tsv)
+- [Reference input manifests](metadata/taxonomy/reference_inputs/README.md)
+- [Specimen and sequencing-run manifest](metadata/analysis_sample_manifest.csv)
+- [Software environments](envs/)
+- [Publication-supporting results](publication_results/)
+
 ## Reproducibility
 
 The repository includes analysis scripts and selected summary outputs. Full computational reproduction additionally requires the archived sequencing reads, corresponding reference sequences, software environments and reference manifests.
