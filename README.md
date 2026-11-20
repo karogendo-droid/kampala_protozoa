@@ -1,114 +1,111 @@
-# Enteric protozoan signals in Kampala wastewater
+# Investigation of Enteric Protozoan Genetic Signals in Kampala Wastewater: Implications for Diarrhoeal Disease Surveillance
 
-**Reproducible shotgun-metagenomics workflow | Kampala, Uganda**
+## Study overview
 
-[NCBI BioProject PRJNA1091428](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1091428) · [Analysis scripts](scripts/) · [Sample manifest](metadata/analysis_sample_manifest.csv) · [Additional quality-assurance documentation](docs/ADDITIONAL_QA.md)
+Wastewater and environmental surveillance (WES) provides a complementary approach to infectious disease monitoring. However, many surveillance applications have primarily targeted bacterial and viral pathogens, while enteric protozoa remain comparatively underrepresented.
 
-## About the study
+Enteric protozoa, including Cryptosporidium spp., Giardia duodenalis, Entamoeba histolytica and Cyclospora cayetanensis, contribute to diarrhoeal disease and may shed genetic material into sewage through human faecal inputs.
 
-This repository contains the bioinformatics scripts, selected public metadata, and stage-specific instructions used for a secondary analysis of published shotgun metagenomes from untreated wastewater and fecal-sludge inputs associated with the **Bugolobi** and **Lubigi** treatment facilities in Kampala, Uganda.
+This study investigated enteric protozoan-associated genetic signals in wastewater from Kampala, Uganda, and examined their potential relevance to broader surveillance of diarrhoeal diseases.
 
-**Study title:** *Enteric Protozoan Detection in Wastewater from Two Treatment Plants in Kampala, Uganda: A Secondary Analysis of Published Shotgun Metagenomes.*
+## Study objectives
 
-**Public-health question:** Can already-published wastewater shotgun-metagenomic data provide preliminary evidence of enteric protozoan-associated genetic signals relevant to community-level surveillance?
+1. Identify and quantify candidate enteric protozoan-associated genetic sequences in wastewater shotgun metagenomes.
+2. Describe the distribution of candidate genetic signals across the investigated wastewater specimens.
+3. Evaluate the molecular evidence supporting the taxonomic identification of the candidate signals.
 
-The **primary analysis** comprises Kraken2 taxonomic classification, descriptive comparison of protozoan-associated assignments, and independent reference-based ribosomal RNA/ITS marker analysis of the same sequencing reads. The analyses are exploratory and do not estimate infection prevalence or demonstrate confirmed pathogen circulation.
+## Study data
 
-## Public sequencing data
+The investigation used six publicly available paired-end shotgun metagenomes from NCBI BioProject PRJNA1091428.
 
-Six runs from [NCBI BioProject PRJNA1091428](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1091428) were included. The [sample manifest](metadata/analysis_sample_manifest.csv) links the original study identifiers to their accession numbers and recorded sampling contexts.
+The specimens originated from wastewater treatment facilities at Bugolobi and Lubigi in Kampala, Uganda.
 
-| Sample | SRA run | Facility | Collection source | Sampling condition |
-|---|---|---|---|---|
-| RES001 | SRR28434174 | Bugolobi | Emptier truck | Dry morning |
-| RES002 | SRR28434173 | Bugolobi | Environmental | Dry morning |
-| RES003 | SRR28434172 | Lubigi | Environmental | Dry morning |
-| RES004 | SRR28434171 | Lubigi | Emptier truck | Dry morning |
-| RES005 | SRR28434170 | Bugolobi | Environmental | Dry evening |
-| RES013 | SRR28434169 | Lubigi | Environmental | Dry evening |
+Each facility contributed:
+- Two environmental wastewater specimens.
+- One vacuum-truck faecal-sludge specimen.
 
-There are **three samples per facility**. Collection sources differ, so these data support **descriptive, sample-level comparisons**, not unbiased comparisons of plant catchments, organism prevalence, pathogen concentration, or disease incidence. The original sequencing reads are *not* stored in this repository; download them from NCBI/ENA using the public accessions.
+All six specimens represented dry-condition sampling.
 
-Additional run accessions and summaries are available under [`metadata/PRJNA1091428_20261101T094644565419Z/`](metadata/PRJNA1091428_20261101T094644565419Z/).
+The original sequencing data were generated and deposited by Kanyerezi and colleagues.
 
-## Primary analysis workflow
+BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1091428/
 
-| Step | Analysis | Code and instructions |
-|---|---|---|
-| **1** | **Retrieve sequencing data and review metadata.** Audit the six accessions and download/validate the sequencing runs. | `scripts/01_fetch_run_metadata.py`–`07_retrieve_normalized_reads.py` |
-| **2** | **Quality control and preprocessing.** Assess read quality and perform adapter/quality processing as documented. | `scripts/04_run_raw_qc.py`, `08_preprocess_reads.py`, `10_batch_preprocess_reads.py`, `10_batch_pipeline.py`, `run_complete_batch.sh` · [Batch guide](docs/README_BATCH_PIPELINE.md) |
-| **3** | **Human-reference screening.** Exclude paired reads mapping to the selected human reference before downstream taxonomic classification. | `scripts/09_screen_human_reads.py` · [Batch guide](docs/README_BATCH_PIPELINE.md) |
-| **4** | **Kraken2 taxonomic classification.** Select references, build and check the curated database, then classify screened samples. | `scripts/11_find_reference_candidates.py`–`16_classify_all_samples.py` · [Database guide](docs/README_CURATED_DB.md) · [Classification guide](docs/README_STAGE1.md) |
-| **5** | **Describe protozoan-associated signals.** Summarize taxonomic assignments by sample and compare Bugolobi and Lubigi descriptively, accounting for the number of screened read pairs. | `scripts/17_assess_candidate_signal_abundance.py` · [Signal summary guide](docs/README_STAGE2.md) |
-| **6** | **Independent ribosomal RNA and ITS marker analysis.** Examine the same metagenomic reads against independently curated SSU/18S rRNA references (PR2) and *Enterocytozoon bieneusi* ITS reference sequences, using documented support thresholds. | `scripts/23_screen_pr2_18s.py`, `24_diagnose_pr2_zero_targets.py`, `25_final_marker_reanalysis.py` · [PR2 guide](docs/README_STAGE3E.md) · [Threshold diagnostics](docs/README_STAGE3F.md) · [Integrated marker guide](docs/README_STAGE4.md) |
-| **7** | **Synthesize findings and public-health implications.** Integrate initial assignments and marker evidence for descriptive reporting. | `scripts/26_synthesize_stage5.py` · [Reporting guide](docs/README_STAGE5.md) |
+Run accessions: SRR28434169–SRR28434174.
 
-**Script numbering reflects the historical development sequence**, not a seven-command installation or execution interface. Scripts 18–22 represent additional checks conducted during development and remain available for transparency; see [additional quality assurance](docs/ADDITIONAL_QA.md). Stage-specific guides contain the detailed commands, required inputs and outputs. A fresh-machine, end-to-end rerun has **not** yet been independently verified.
+## Overview of the analysis
 
-## Set up the software
+Sequencing reads underwent quality preprocessing and human-sequence screening.
 
-The original analyses were performed on an **Apple M1 Mac with 32 GiB of RAM**. Running the workflow requires substantial additional disk space for compressed and decompressed reads, reference files, indices, and temporary outputs.
+Candidate enteric protozoan and microsporidian sequences were investigated using taxonomic classification, competitive genomic alignment, genomic-distribution assessment, nucleotide similarity searches and complementary marker-based analyses.
 
-Main command-line tools included **NCBI SRA Toolkit, FastQC, MultiQC, fastp, Bowtie2, SAMtools, Kraken2, and Python**, with different software environments for different stages.
+The genomic screening reference collection contained 55 distinct microbial and eukaryotic assemblies, with an additional human competitor reference.
 
-```bash
-git clone https://github.com/karogendo-droid/kampala_protozoa.git
-cd kampala_protozoa
+The investigation included Giardia, Cryptosporidium, Entamoeba, Cyclospora, Blastocystis, Enterocytozoon and Encephalitozoon.
 
-# Create environments as needed; consult the corresponding YAML first.
-conda env create -f envs/kampala-qc.yml
-conda env create -f envs/kampala-align.yml
-```
+Enterocytozoon and Encephalitozoon were considered separately as microsporidia rather than conventional protozoa.
 
-The [`envs/`](envs/) directory also includes a fastp-equipped QC environment. The original interactive environment was named `kampala-taxanomy`, which is not necessarily identical to either shared environment YAML. The commands shown above are setup examples, **not a tested universal installation recipe**. Follow the stage-specific README and the actual program arguments for each script.
+## Principal findings
 
-## Reference resources and analysis conventions
+A total of 91,612,337 original paired-end read pairs were available, of which 68,288,156 remained following preprocessing and human-sequence screening.
 
-The first Kraken2 implementation used a **purpose-curated collection of 44 selected reference assemblies plus a human mitochondrial sequence**, not a comprehensive wastewater metagenome database. This database composition limits the biological specificity of its initial taxonomic labels.
+Initial taxonomic classification assigned 89,444 read pairs to the seven investigated genera.
 
-The reference selection process is documented in:
+Of these, 10,149 pairs (11.3%) satisfied the predefined genus-concordant genomic-alignment criteria.
 
-- [`metadata/taxonomy/protozoa_target_manifest.tsv`](metadata/taxonomy/protozoa_target_manifest.tsv)
-- [`metadata/taxonomy/curated_v1_selected_assemblies.tsv`](metadata/taxonomy/curated_v1_selected_assemblies.tsv)
-- [`metadata/taxonomy/reference_shortlist_for_review.tsv`](metadata/taxonomy/reference_shortlist_for_review.tsv)
+The genomic distribution and nucleotide similarity assessments identified uncertainty concerning the specificity of some preliminary assignments.
 
-For descriptive comparisons, **reads per million (RPM)** refers to the number of Kraken2-assigned *read-pair fragments* divided by the total human-screened read-pair fragments for the relevant sample or pooled facility, multiplied by one million. These values are **classification-signal metrics**, not measures of organism concentration, viable pathogen burden, or infection prevalence. Keep the same read-pair counting conventions when reproducing the analysis.
+Whole-metagenome marker screening retained three isolated target-associated read pairs, comprising two Blastocystis-associated pairs and one Entamoeba-associated pair.
 
-For independent marker analysis, document the exact PR2 version, *E. bieneusi* ITS references, competing/decoy references, alignment filters, and the fragment-support criteria used in the original scripts. Marker analysis uses the **same sequencing dataset** with a different reference system; it is not independent wet-laboratory confirmation.
+None of the investigated specimen–genus combinations met the predefined marker corroboration criteria.
 
-## Interpretation of the study signals
+The complementary marker assessment of Kraken2-selected candidate reads also identified no pairs satisfying its stringent genus-concordance requirements.
 
-The initial Kraken2 analysis generated candidate taxonomic assignments to enteric protozoan genera, including *Enterocytozoon*, *Blastocystis*, *Cyclospora*, *Entamoeba*, *Cryptosporidium*, and *Giardia*. These labels are **preliminary sequence signals**, not organism confirmations.
+These results represent preliminary genetic signals rather than confirmed organism-level detections.
 
-The independent marker analyses recovered a small number of isolated *Blastocystis*- and *Entamoeba*-associated fragments, but **no target genus met the predefined marker corroboration thresholds** across the samples. Accordingly, the findings may motivate follow-up surveillance, but they do not establish community infection, pathogen viability, or confirmed circulation. A failure to reach a marker threshold does not demonstrate absence of the organism.
+## Public-health relevance
 
-Additional sequence/reference quality assessments undertaken during development materially qualify some of the initial classifications. These are retained in the code and [supplementary QA documentation](docs/ADDITIONAL_QA.md), rather than framed as separate primary study objectives.
+Enteric protozoa contribute to gastrointestinal disease but remain comparatively underrepresented in wastewater surveillance.
+
+The study addresses whether these organisms warrant consideration as additional targets within wastewater-based surveillance of diarrhoeal diseases in Uganda.
+
+The findings do not demonstrate confirmed protozoan occurrence, organism viability, community infection prevalence or infections missed by existing surveillance programmes.
+
+Prospective investigations using validated organism-specific molecular assays, repeated wastewater sampling and complementary clinical surveillance are needed to determine whether protozoan monitoring could provide additional information for public-health decision-making.
 
 ## Repository organization
 
-```text
-kampala_protozoa/
-├── README.md                   # Entry point and primary analysis workflow
-├── README_BATCH_PIPELINE.md    # Data preparation and batch details
-├── README_CURATED_DB.md        # Reference selection and Kraken2 database
-├── README_STAGE*.md            # Original stage-specific instructions
-├── scripts/                    # Original numbered Python/Bash scripts
-├── envs/                       # Conda environment specifications
-├── metadata/                   # Selected public run and reference manifests
-└── docs/
-    └── ADDITIONAL_QA.md        # Additional assessment/provenance information
-```
+- `scripts/`: Analysis scripts, including preprocessing, taxonomic screening and molecular assessment.
+- `metadata/`: Specimen information and selected reference documentation.
+- `publication_results/`: Compact summary tables supporting the finalized manuscript.
+- `docs/`: Analysis documentation and methodological notes.
+- `envs/`: Software environment information.
 
-Original data, generated FASTQ/BAM files, human-derived read outputs, local paths, logs, transient analysis archives, and private-location records should **not** be committed. Examine staged changes using `git diff --cached` before every public push. A `.gitignore` does not remove files that Git already tracks.
+The large sequencing files, reference databases and intermediate analysis outputs are not distributed through this repository.
 
-## Reproducibility status
+## Publication results
 
-This repository contains the **analysis source code, selected public manifests, environment definitions, and stage documentation**. It has **not yet passed an independent, clean-environment, end-to-end reproducibility test**. To fully reproduce a published result, researchers should additionally capture version-pinned references, hashes, commands, environment specifications, and the input/output provenance of each step. Exact result tables should be compared with documented expected outputs before declaring a successful replication.
+The `publication_results/` directory contains the selected summary tables from the finalized analysis.
 
-## Data citation, pipeline citation and license
+These tables should be interpreted as sequence-level evidence and not as estimates of parasite abundance, organism viability or community infection prevalence.
 
-**Source dataset:** [NCBI BioProject PRJNA1091428](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1091428). Cite the original data-generating investigators and associated publication, where verified.
+## Data availability
 
-**Pipeline:** Cite this repository and a stable release/commit identifier. Add the manuscript citation and DOI after publication.
+The original sequencing data are available through NCBI BioProject PRJNA1091428.
 
-A software license has not been specified by this README. Confirm code ownership and third-party licensing before adding a `LICENSE` file or redistributing third-party reference data.
+https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1091428/
+
+## Acknowledgement
+
+We acknowledge Kanyerezi S., Nabisubi P., Kebirungi G. and their co-authors for generating and publicly depositing the original wastewater shotgun metagenomic data.
+
+Source publication:
+
+Kanyerezi S, et al. Metagenomics insights into the microbial resistome and virulome composition of Kampala's wastewater. Open Research Africa. 2024;7:8.
+
+https://doi.org/10.12688/openresafrica.15040.1
+
+## Reproducibility
+
+The repository includes analysis scripts and selected summary outputs. Full computational reproduction additionally requires the archived sequencing reads, corresponding reference sequences, software environments and reference manifests.
+
+Analysis-specific documentation should be consulted before executing individual scripts.

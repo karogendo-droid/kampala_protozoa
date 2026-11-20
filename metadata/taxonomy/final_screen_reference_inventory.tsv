@@ -1,0 +1,56 @@
+accession	organism	taxid	reference_group	sequence_count	source_manifest
+GCF_000002435.2	Giardia duodenalis	5741	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000151665.1	Blastocystis hominis	12968	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_002999335.1	Cyclospora cayetanensis	88456	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_001865355.1	Cryptosporidium andersoni	117008	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000208925.1	Entamoeba histolytica HM-1:IMSS	294381	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_009768925.1	Cryptosporidium bovis	310047	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000006425.1	Cryptosporidium hominis TU502	353151	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000165345.1	Cryptosporidium parvum Iowa II	353152	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000209125.1	Entamoeba dispar SAW760	370354	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000330505.1	Entamoeba invadens IP1	370355	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000006515.1	Cryptosporidium muris RN66	441375	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_009792415.1	Cryptosporidium ryanae	515981	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_001865345.1	Cryptosporidium ubiquitum	857276	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000743755.1	Blastocystis sp. subtype 4	944170	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000257125.1	Entamoeba nuttalli P19	1076696	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_004936735.1	Cryptosporidium sp. chipmunk genotype I	1280935	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_027406365.1	Blastocystis sp. subtype 1	944036	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_000963365.1	Blastocystis sp. subtype 2	944160	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_029241775.1	Blastocystis sp. subtype 3	944168	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_000963415.1	Blastocystis sp. subtype 6	944208	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_027406465.1	Blastocystis sp. subtype 7	1076755	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_000963455.1	Blastocystis sp. subtype 8	429571	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_000963465.1	Blastocystis sp. subtype 9	1544353	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_000209485.1	Enterocytozoon bieneusi H348	481877	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000091225.2	Encephalitozoon cuniculi GB-M1	284813	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000146465.1	Encephalitozoon intestinalis ATCC 50506	876142	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000277815.2	Encephalitozoon hellem ATCC 50504	907965	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCF_000280035.1	Encephalitozoon romaleae SJ-2008	1178016	combined_28		references/assemblies/enteric_combined_v1/manifest.tsv
+GCA_001543975.1	Giardia duodenalis assemblage B	1394984	legacy_recovered_27	508	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_002893445.1	Cyclospora cayetanensis	88456	legacy_recovered_27	650	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_002914575.1	Entamoeba moshkovskii	41668	legacy_recovered_27	4607	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_006247105.1	Giardia muris	5742	legacy_recovered_27	59	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_007210665.1	Cryptosporidium tyzzeri	756076	legacy_recovered_27	11	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_011634595.1	Giardia duodenalis	5741	legacy_recovered_27	19	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_014529505.1	Cryptosporidium felis	83540	legacy_recovered_27	133	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_015245375.1	Cryptosporidium parvum	5807	legacy_recovered_27	8	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_024399295.1	Encephalitozoon intestinalis	58839	legacy_recovered_27	11	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_025449415.1	Blastocystis sp. subtype 3	944168	legacy_recovered_27	824	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_027243975.1	Cryptosporidium canis	195482	legacy_recovered_27	282	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_027406405.1	Blastocystis sp. subtype 1	944036	legacy_recovered_27	116	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_039657295.1	Cryptosporidium meleagridis	93969	legacy_recovered_27	13	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_040285075.1	Cryptosporidium parvum	5807	legacy_recovered_27	8	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_045269125.1	Cryptosporidium hominis	237895	legacy_recovered_27	8	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_057946535.1	Entamoeba histolytica	5759	legacy_recovered_27	37	references/assemblies/legacy_unique_v1/manifest.tsv
+GCA_057946545.1	Entamoeba dispar	46681	legacy_recovered_27	36	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000002655.1	Aspergillus fumigatus Af293	330879	legacy_recovered_27	8	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000005845.2	Escherichia coli str. K-12 substr. MG1655	511145	legacy_recovered_27	1	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000006565.2	Toxoplasma gondii ME49	508771	legacy_recovered_27	2264	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000006765.1	Pseudomonas aeruginosa PAO1	208964	legacy_recovered_27	1	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000009045.1	Bacillus subtilis subsp. subtilis str. 168	224308	legacy_recovered_27	1	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000146045.2	Saccharomyces cerevisiae S288C	559292	legacy_recovered_27	17	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000182965.3	Candida albicans SC5314	237561	legacy_recovered_27	8	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000208865.1	Neospora caninum	29176	legacy_recovered_27	14	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000499425.1	Eimeria acervulina	5801	legacy_recovered_27	3415	references/assemblies/legacy_unique_v1/manifest.tsv
+GCF_000499545.2	Eimeria tenella	5802	legacy_recovered_27	4665	references/assemblies/legacy_unique_v1/manifest.tsv

@@ -34,40 +34,11 @@
 .DS_Store
 __pycache__/
 .ipynb_checkpoints/
-EOFcat > .gitignore <<'EOF'
-# Keep sequencing data, databases and unreviewed outputs local
-/data/
-/references/
-/results/
-/logs/
-/tmp/
-/downloads/
 
-# Sequence and alignment files, including accidental copies elsewhere
-*.fastq
-*.fastq.gz
-*.fq
-*.fq.gz
-*.sra
-*.fasta
-*.fasta.gz
-*.fa
-*.fa.gz
-*.fna
-*.fna.gz
-*.sam
-*.bam
-*.bai
-*.cram
-*.crai
+# Local archives and temporary files
+*.zip
+*.lock
 
-# Credentials and local configuration
-.env
-.env.*
-*.pem
-*.key
-
-# macOS and Python temporary files
-.DS_Store
-__pycache__/
-.ipynb_checkpoints/
+# Local backup and accidental reference file
+README_backup.md
+NC_000001.11
